@@ -122,7 +122,7 @@ async function getJSONData() {
             // alert("Second success");
         })
         .fail(function() {
-            alert("Error");
+            console.log("Error getting data");
         });
     
     return {
@@ -165,7 +165,6 @@ async function getGraphData() {
       
             
             chart.load({
-                
                 columns: mydata             
             });
         }, delay);
