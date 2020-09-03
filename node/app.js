@@ -1,5 +1,5 @@
 /**
- * Run `node install && node app.js`, which will install the programs dependencies
+ * Run `npm install && node app.js`, which will install the programs dependencies
  * and start a server on localhost:3005. The '/' endpoint will generate a random
  * set of data each time its hit.
  */
