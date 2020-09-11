@@ -5,9 +5,8 @@ import onlinesql as ons
 
 
 port_timeout = 1260 # 21 minutes, in case we water.
-HC06_port = "COM16"
+HC06_port = "port_name"
 ticker = 0
-data_file = "test_data.csv"
 
 class ReadingDone(Exception):
     pass
@@ -138,19 +137,6 @@ Watering and then updating the next bit of data seems to take 12 minutes, accord
 
 
 """
-
-# def userInputter(ser):
-#     while True:
-#         while ser.in_waiting:
-#             ser_bytes = ser.readline()
-#             decoded_bytes = (ser_bytes[0:len(ser_bytes)-2].decode("utf-8",errors='replace')) # replaces any errors with a '?'
-#             print(decoded_bytes)
-#         user_command = input("'1' to turn on LED, '0' to turn in off!")
-#         usr_command_bytes = str.encode(user_command)
-#         ser.write(usr_command_bytes)
-#         time.sleep(0.5)
-
-
 
 def main():
     # Connect to databse
