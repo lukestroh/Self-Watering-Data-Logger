@@ -8,10 +8,10 @@ import mysql.connector
 class mySequel:
     def connectToDB():
         mydb = mysql.connector.connect(
-            host = "sql173.main-hosting.eu", # This is the domain where the database is held
-            user = "u463618153_quescondido",
-            password = "123dbPasswords",
-            database = "u463618153_garden_databas",
+            host = "hostname", # This is the domain where the database is held
+            user = "username",
+            password = "password",
+            database = "database_name",
             # port = 3306
             # auth_plugin = "mysql_native_password"
         )
