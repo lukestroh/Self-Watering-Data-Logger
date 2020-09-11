@@ -1,8 +1,3 @@
-# // database: u463618153_garden_databas
-# // user: u463618153_quescondido
-# // host: sql173.main-hosting.eu
-# // password: 123dbPasswords
-
 import mysql.connector
 
 class mySequel:
