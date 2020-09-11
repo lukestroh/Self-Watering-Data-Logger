@@ -28,8 +28,7 @@ def updateLastEntry(last_entry):
     with open("last_entry.txt","w", newline='') as last_entry_file:
         last_entry_file.write(last_entry)
         last_entry_file.close()
-        time.sleep(0.001)
-
+        
 # Get the last entry, with two returns. One for Python to use to compare, the other to send, with markers, to the Arduino
 def getLastEntry():
     with open("last_entry.txt","r") as last_entry_file:
@@ -97,7 +96,6 @@ def getData(ser, database, dbcursor):
                 decoded_array = readSerialLines(ser)
                 ticker = 0
 
-            time.sleep(0.01)
 
             updateLastEntry(decoded_array[0]) # store the latest Unix time value into a text file. That way, we have a 'key' to send the Arduino
             # writeToFile(data_file, decoded_array)
